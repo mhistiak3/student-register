@@ -2,7 +2,7 @@ import express from "express";
 import { APP_PORT, DATABASE_URL } from "./config/index.js";
 import { connectDB } from "./config/mongoDB.js";
 import cookieParser from "cookie-parser";
-import router from "./routes/api.js";
+import router from "./src/routes/api.js";
 // App Object
 const app = express();
 

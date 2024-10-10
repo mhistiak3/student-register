@@ -21,8 +21,11 @@ export const loginController = async (req, res) => {
     // set in cookies
     res.cookie("token", token, {
       httpOnly: true,
-      maxAge: 3600 * 24,
-    });// 24 hours
+      sameSite: "strict",
+      secure: false,
+      maxAge: 7 * 24 * 60 * 60 * 1000,
+
+    });
     
     res.json({
       type: "success",

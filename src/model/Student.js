@@ -23,6 +23,12 @@ const studentSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    role: {
+      type: Number,
+    },
+    dob: {
+      type: String,
+    },
   },
   { timestamps: true, versionKey: false }
 );
